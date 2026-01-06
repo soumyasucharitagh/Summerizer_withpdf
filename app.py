@@ -1,9 +1,9 @@
 import streamlit as st
 from PIL import Image
 
-from models.text_summarizer import summarize_text
-from models.pdf_summarizer import summarize_pdf
-from models.image_captioning import generate_caption
+from text_summarizer import summarize_text
+from pdf_summarizer import summarize_pdf
+from image_captioning import generate_caption
 
 st.set_page_config(page_title="ML Multi App", layout="wide")
 
@@ -64,3 +64,4 @@ elif option == "Image Captioning":
                 caption = generate_caption(image)
             st.subheader("Caption")
             st.write(caption)
+
