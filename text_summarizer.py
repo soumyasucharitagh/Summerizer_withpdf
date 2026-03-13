@@ -13,4 +13,4 @@ def summarize_text(text, max_length=150, min_length=40):
         min_length=min_length,
         do_sample=False
     )
-    return summary[0]["summary_text"]
+    return summary[0]['summary_text']
