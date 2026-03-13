@@ -1,5 +1,5 @@
 import pdfplumber
-from models.text_summarizer import summarize_text
+from text_summarizer import summarize_text
 
 def extract_text_from_pdf(pdf_file):
     text = ""
